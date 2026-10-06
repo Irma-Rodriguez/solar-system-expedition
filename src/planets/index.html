@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the planets of our solar system and discover scientific facts.">
+    <meta name="author" content="Irma Rodriguez">
+    <title>Explore Planets | Solar System Expedition</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="main-navigation">
+
+            <a href="/" class="logo-link" aria-label="Solar System Expedition home">
+                <img src="/images/astronauta.png" alt="Solar System Expedition logo" class="logo">
+            </a>
+
+            <a href="/" class="site-title">
+                Solar System Expedition
+            </a>
+
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul id="navigation" class="navigation-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/planets">Explore</a></li>
+                <li><a href="/gallery/">Gallery</a></li>
+                <li><a href="/search/">Search</a></li>
+                <li><a href="/favorites/">Favorites</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="planets-section">
+
+            <div class="section-heading">
+                <h1>Explore the Planets</h1>
+                <p>Discover scientific information about the planets in our solar system.</p>
+            </div>
+
+            <div id="planet-container" class="planet-grid" aria-live="polite">
+                <!-- Planet cards will be generated here -->
+            </div>
+
+            <dialog id="planet-modal" class="planet-modal">
+                <div class="modal-content">
+
+                    <button id="modal-close" class="modal-close" type="button" aria-label="Close planet information">
+                        &times;
+                    </button>
+
+                    <div id="modal-planet-content">
+                        <!-- Planet information will be generated here -->
+                    </div>
+
+                </div>
+            </dialog>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <p>&copy; 2026 Solar System Expedition</p>
+
+        <p>WDD 330 Final Project</p>
+
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+NASA Gallery HTML
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore amazing images of space and the solar system from NASA.">
+    <meta name="author" content="Irma Rodriguez">
+    <title>NASA Gallery | Solar System Expedition</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="main-navigation">
+
+            <a href="/" class="logo-link" aria-label="Solar System Expedition home">
+                <img src="/images/astronaut.png" alt="Solar System Expedition logo" class="logo">
+            </a>
+
+            <a href="/" class="site-title">
+                Solar System Expedition
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul id="navigation" class="navigation-list">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+
+                <li>
+                    <a href="/planets/">Planets</a>
+                </li>
+
+                <li>
+                    <a href="/gallery/" class="active">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="/search/">Search</a>
+                </li>
+
+                <li>
+                    <a href="/favorites/">Favorites</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="gallery-section">
+
+            <div class="section-heading">
+                <h1>NASA Space Gallery</h1>
+
+                <p>
+                    Explore amazing images from NASA's Image and Video Library.
+                </p>
+            </div>
+
+            <form id="gallery-search-form" class="gallery-search">
+
+                <label for="gallery-search-input">
+                    Search NASA images
+                </label>
+
+                <div class="gallery-search-controls">
+
+                    <input id="gallery-search-input" name="query" type="search"
+                        placeholder="Search for Mars, Jupiter, galaxy..." autocomplete="off" required>
+
+                    <button type="submit" class="button">
+                        Search
+                    </button>
+
+                </div>
+
+            </form>
+
+            <div class="gallery-popular">
+
+                <h2>Explore popular topics</h2>
+
+                <div class="gallery-topics">
+
+                    <button type="button" data-query="Mercury planet">
+                        Mercury
+                    </button>
+
+                    <button type="button" data-query="Venus planet">
+                        Venus
+                    </button>
+
+                    <button type="button" data-query="Earth from space">
+                        Earth
+                    </button>
+
+                    <button type="button" data-query="Mars planet">
+                        Mars
+                    </button>
+
+                    <button type="button" data-query="Jupiter planet">
+                        Jupiter
+                    </button>
+
+                    <button type="button" data-query="Saturn planet">
+                        Saturn
+                    </button>
+
+                    <button type="button" data-query="Uranus planet">
+                        Uranus
+                    </button>
+
+                    <button type="button" data-query="Neptune planet">
+                        Neptune
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div id="gallery-status" class="gallery-status" aria-live="polite">
+                Search for something to explore NASA images.
+            </div>
+
+            <div id="gallery-container" class="gallery-grid" aria-live="polite">
+                <!-- NASA images will be generated here -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <p>&copy; 2026 Solar System Expedition</p>
+
+        <p>WDD 330 Final Project</p>
+
+    </footer>
+
+    <script type="module" src="../js/gallery.js"></script>
+
+</body>
+
+</html>

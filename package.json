@@ -1,0 +1,32 @@
+{
+  "name": "solar-system-expedition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --emptyOutDir",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,css}\"",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Irma-Rodriguez/solar-system-expedition.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Irma-Rodriguez/solar-system-expedition/issues"
+  },
+  "homepage": "https://github.com/Irma-Rodriguez/solar-system-expedition#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "prettier": "^3.9.9",
+    "vite": "^7.3.6"
+  }
+}
